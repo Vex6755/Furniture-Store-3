@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activities – Aesthetic Furniture</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-controls="sidebarMenu" aria-expanded="false">
+      <span class="icon-open" aria-hidden="true">☰</span><span class="icon-close" aria-hidden="true">✕</span>
+    </button>
+    <a class="logo" href="index.html">AESTHETIC FURNITURE</a>
+    <span class="greeting">Hello</span>
+  </header>
+
+  <div class="layout">
+
+    <aside class="sidebar" id="sidebarMenu">
+      <nav class="nav" aria-label="Main">
+
+        <div class="nav-group">
+          <button class="nav-item nav-toggle" type="button" aria-expanded="false" aria-controls="sub-about">About<span class="plus" aria-hidden="true"></span></button>
+          <ul class="subnav" id="sub-about" hidden>
+            <li><a href="index.html#about">Our story</a></li>
+            <li><a href="index.html#materials">Materials</a></li>
+            <li><a href="index.html#showroom">Showroom film</a></li>
+          </ul>
+        </div>
+
+        <a class="nav-item" href="news.html">News</a>
+
+        <div class="nav-group">
+          <button class="nav-item nav-toggle" type="button" aria-expanded="false" aria-controls="sub-products">Products<span class="plus" aria-hidden="true"></span></button>
+          <ul class="subnav" id="sub-products" hidden>
+            <li><a href="index.html#products">All products</a></li>
+            <li><a href="index.html?category=furniture#products">Furniture</a></li>
+            <li><a href="index.html?category=lighting#products">Lighting</a></li>
+            <li><a href="index.html?category=kitchen#products">Kitchen</a></li>
+            <li><a href="index.html?category=household#products">Household</a></li>
+            <li><a href="index.html?category=accessories#products">Accessories</a></li>
+          </ul>
+        </div>
+
+        <a class="nav-item" href="design-offices.html">Design Offices</a>
+        <a class="nav-item active" href="activities.html" aria-current="page">Activities</a>
+        <a class="nav-item" href="contact.html">Contact</a>
+        <a class="nav-item" href="legal-notice.html">Legal Notice</a>
+      </nav>
+
+      <p class="sidebar-extra">
+        <a href="contact.html#newsletter">Newsletter</a>
+        <span aria-hidden="true">|</span>
+        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".8" fill="currentColor"/></svg></a>
+      </p>
+    </aside>
+
+    <main class="main" id="main">
+      <section aria-labelledby="act-title">
+        <h1 id="act-title">Activities</h1>
+        <p class="subtitle">Workshops, talks and exhibitions where you can meet our designers and try our furniture.</p>
+        <div class="event-list">
+        <article class="event">
+          <p class="event-date"><time datetime="2026-10-17"><span class="event-day">17</span> Oct 2026</time></p>
+          <div>
+            <h2>Open studio day</h2>
+            <p class="event-meta">Berlin workshop · 10:00–16:00</p>
+            <p>Watch our makers cut, join and finish furniture, and try the autumn collection in the showroom. Entry is free and no booking is needed.</p>
+            <p><a href="contact.html">Reserve a place</a></p>
+          </div>
+        </article>
+        <article class="event">
+          <p class="event-date"><time datetime="2026-11-07"><span class="event-day">7</span> Nov 2026</time></p>
+          <div>
+            <h2>Upholstery workshop</h2>
+            <p class="event-meta">Munich showroom · 10:00–15:00</p>
+            <p>Re-cover a small stool seat under the guidance of our upholsterer. All tools and materials are included. Limited to twelve people.</p>
+            <p><a href="contact.html">Reserve a place</a></p>
+          </div>
+        </article>
+        <article class="event">
+          <p class="event-date"><time datetime="2026-11-19"><span class="event-day">19</span> Nov 2026</time></p>
+          <div>
+            <h2>Designer talk: furniture for small spaces</h2>
+            <p class="event-meta">Vienna design office · 18:30–20:00</p>
+            <p>Sofia Reyes and Jonas Eder explain how they design pieces that fit compact homes, followed by questions from the audience.</p>
+            <p><a href="contact.html">Reserve a place</a></p>
+          </div>
+        </article>
+        <article class="event">
+          <p class="event-date"><time datetime="2026-12-04"><span class="event-day">4</span> Dec 2026</time></p>
+          <div>
+            <h2>Winter exhibition opening</h2>
+            <p class="event-meta">Berlin showroom · 17:00–21:00</p>
+            <p>Be the first to see the winter collection, including new lighting and household pieces. Drinks and snacks are served.</p>
+            <p><a href="contact.html">Reserve a place</a></p>
+          </div>
+        </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <p class="footer-title">Aesthetic Furniture</p>
+        <p>Phone: <a href="tel:+49123456789">+49 123 456 789</a></p>
+        <p>Email: <a href="mailto:info@aestheticfurniture.example">info@aestheticfurniture.example</a></p>
+      </div>
+      <ul class="social" aria-label="Social media">
+        <li><a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".8" fill="currentColor"/></svg></a></li>
+        <li><a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V9H6v4h3v8h4v-8h3l1-4h-4V6.5c0-.3.2-.5.5-.5H15z"/></svg></a></li>
+        <li><a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><line x1="8" y1="11" x2="8" y2="16"/><circle cx="8" cy="8" r=".6"/><path d="M12 16v-5m0 2a2.5 2.5 0 0 1 5 0v3"/></svg></a></li>
+      </ul>
+    </div>
+    <p class="copyright">© 2026 Aesthetic Furniture. Imaginary company created for a group project. <a href="legal-notice.html">Legal Notice</a></p>
+  </footer>
+
+</body>
+</html>

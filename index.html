@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products – Aesthetic Furniture</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-controls="sidebarMenu" aria-expanded="false">
+      <span class="icon-open" aria-hidden="true">☰</span><span class="icon-close" aria-hidden="true">✕</span>
+    </button>
+    <a class="logo" href="index.html">AESTHETIC FURNITURE</a>
+    <span class="greeting">Hello</span>
+  </header>
+
+  <div class="layout">
+
+    <aside class="sidebar" id="sidebarMenu">
+      <nav class="nav" aria-label="Main">
+
+        <div class="nav-group">
+          <button class="nav-item nav-toggle" type="button" aria-expanded="false" aria-controls="sub-about">About<span class="plus" aria-hidden="true"></span></button>
+          <ul class="subnav" id="sub-about" hidden>
+            <li><a href="index.html#about">Our story</a></li>
+            <li><a href="index.html#materials">Materials</a></li>
+            <li><a href="index.html#showroom">Showroom film</a></li>
+          </ul>
+        </div>
+
+        <a class="nav-item" href="news.html">News</a>
+
+        <div class="nav-group">
+          <button class="nav-item nav-toggle active" type="button" aria-expanded="false" aria-controls="sub-products">Products<span class="plus" aria-hidden="true"></span></button>
+          <ul class="subnav" id="sub-products" hidden>
+            <li><a href="index.html#products">All products</a></li>
+            <li><a href="index.html?category=furniture#products">Furniture</a></li>
+            <li><a href="index.html?category=lighting#products">Lighting</a></li>
+            <li><a href="index.html?category=kitchen#products">Kitchen</a></li>
+            <li><a href="index.html?category=household#products">Household</a></li>
+            <li><a href="index.html?category=accessories#products">Accessories</a></li>
+          </ul>
+        </div>
+
+        <a class="nav-item" href="design-offices.html">Design Offices</a>
+        <a class="nav-item" href="activities.html">Activities</a>
+        <a class="nav-item" href="contact.html">Contact</a>
+        <a class="nav-item" href="legal-notice.html">Legal Notice</a>
+      </nav>
+
+      <p class="sidebar-extra">
+        <a href="contact.html#newsletter">Newsletter</a>
+        <span aria-hidden="true">|</span>
+        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".8" fill="currentColor"/></svg></a>
+      </p>
+    </aside>
+
+    <main class="main" id="main">
+      <section id="products" aria-labelledby="products-title">
+        <h1 id="products-title">Products</h1>
+        <p class="subtitle">The following pieces were presented at our previous exhibitions.</p>
+
+        <fieldset class="filter" id="categoryFilter">
+          <legend>Categories</legend>
+          <div class="filter-grid">
+            <label><input type="checkbox" value="furniture" checked> Furniture</label>
+            <label><input type="checkbox" value="kitchen" checked> Kitchen</label>
+            <label><input type="checkbox" value="accessories" checked> Accessories</label>
+            <label><input type="checkbox" value="lighting" checked> Lighting</label>
+            <label><input type="checkbox" value="household" checked> Household</label>
+          </div>
+        </fieldset>
+
+        <p class="result-count" id="resultCount" aria-live="polite"></p>
+
+        <div class="grid" id="productGrid">
+        <article class="card" data-category="furniture">
+          <div class="media"><img src="images/sideboard.svg" alt="Birch plywood sideboard with sliding doors" width="800" height="600" loading="lazy"></div>
+          <div class="card-info">
+            <h3>Stratus</h3>
+            <p class="card-type">Sideboard</p>
+            <p class="card-designer">Lena Hartmann</p>
+          </div>
+        </article>
+        <article class="card" data-category="furniture">
+          <div class="media"><img src="images/armchair.svg" alt="Coral upholstered armchair with black legs" width="800" height="600" loading="lazy"></div>
+          <div class="card-info">
+            <h3>Alba</h3>
+            <p class="card-type">Armchair</p>
+            <p class="card-designer">Marco Bellini</p>
+          </div>
+        </article>
+        <article class="card" data-category="lighting">
+          <div class="media"><img src="images/floor-lamp.svg" alt="Brass arc floor lamp" width="800" height="600" loading="lazy"></div>
+          <div class="card-info">
+            <h3>Arc</h3>
+            <p class="card-type">Floor lamp</p>
+            <p class="card-designer">Sofia Reyes</p>
+          </div>
+        </article>
+        <article class="card" data-category="kitchen">
+          <div class="media"><img src="images/counter-stool.svg" alt="Counter stool with sage green seat" width="800" height="600" loading="lazy"></div>
+          <div class="card-info">
+            <h3>Taro</h3>
+            <p class="card-type">Counter stool</p>
+            <p class="card-designer">Jonas Eder</p>
+          </div>
+        </article>
+        <article class="card" data-category="household">
+          <div class="media"><img src="images/vase.svg" alt="Terracotta vase with dried branches" width="800" height="600" loading="lazy"></div>
+          <div class="card-info">
+            <h3>Terra</h3>
+            <p class="card-type">Vase</p>
+            <p class="card-designer">Mira Okafor</p>
+          </div>
+        </article>
+        <article class="card" data-category="accessories">
+          <div class="media"><img src="images/wall-mirror.svg" alt="Round wall mirror with oak frame" width="800" height="600" loading="lazy"></div>
+          <div class="card-info">
+            <h3>Lumen</h3>
+            <p class="card-type">Wall mirror</p>
+            <p class="card-designer">Tobias Hofer</p>
+          </div>
+        </article>
+        </div>
+        <p class="empty" id="emptyState" hidden>No products match. Select at least one category.</p>
+      </section>
+
+      <section id="about" class="block" aria-labelledby="about-title">
+        <h2 id="about-title">About Aesthetic Furniture</h2>
+        <p>Aesthetic Furniture designs and builds furniture for homes and workplaces. Every piece starts as a sketch in one of our design offices, is built by hand in our workshop and is tested in our showroom before it goes into production.</p>
+        <h3 id="materials">Materials</h3>
+        <p>We work with birch plywood, solid oak, recycled steel and wool upholstery, and we choose timber from responsibly managed forests.</p>
+      </section>
+
+      <section id="showroom" class="block" aria-labelledby="showroom-title">
+        <h2 id="showroom-title">Showroom film</h2>
+        <p>A short tour of this season's collection.</p>
+        <button class="video-trigger" id="videoTrigger" type="button" aria-label="Play showroom film">
+          <img src="images/video-poster.jpg" alt="" width="1280" height="720" loading="lazy">
+          <span class="play-badge" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+        </button>
+      </section>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <p class="footer-title">Aesthetic Furniture</p>
+        <p>Phone: <a href="tel:+49123456789">+49 123 456 789</a></p>
+        <p>Email: <a href="mailto:info@aestheticfurniture.example">info@aestheticfurniture.example</a></p>
+      </div>
+      <ul class="social" aria-label="Social media">
+        <li><a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".8" fill="currentColor"/></svg></a></li>
+        <li><a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V9H6v4h3v8h4v-8h3l1-4h-4V6.5c0-.3.2-.5.5-.5H15z"/></svg></a></li>
+        <li><a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><line x1="8" y1="11" x2="8" y2="16"/><circle cx="8" cy="8" r=".6"/><path d="M12 16v-5m0 2a2.5 2.5 0 0 1 5 0v3"/></svg></a></li>
+      </ul>
+    </div>
+    <p class="copyright">© 2026 Aesthetic Furniture. Imaginary company created for a group project. <a href="legal-notice.html">Legal Notice</a></p>
+  </footer>
+
+  <dialog class="video-modal" id="videoModal" aria-label="Showroom film">
+    <button class="modal-close" id="modalClose" type="button" aria-label="Close video">✕</button>
+    <video id="modalVideo" controls playsinline preload="none" poster="images/video-poster.jpg">
+      <source src="showroom.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </dialog>
+
+</body>
+</html>
